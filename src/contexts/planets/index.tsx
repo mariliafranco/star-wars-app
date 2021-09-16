@@ -12,6 +12,7 @@ const DEFAULT_VALUE: IPlanetsContext = {
     filterResults: [],
     filterNumericResults: undefined,
   },
+  // eslint-disable-next-line @typescript-eslint/no-empty-function
   setState: () => {},
 };
 

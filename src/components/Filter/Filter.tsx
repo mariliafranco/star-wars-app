@@ -31,88 +31,76 @@ export const Filter: React.FC<IFilter> = ({ openedFilter }: IFilter) => {
 
     switch (type) {
       case "name":
-        const nameResults = state.results.filter((item) =>
-          item.name.toLowerCase().includes(search)
-        );
+        {
+          const nameResults = state.results.filter((item) =>
+            item.name.toLowerCase().includes(search)
+          );
 
-        setState({ ...state, filterResults: nameResults });
-        break;
-      case "rotation_period":
-        const rotation_period = state.results.filter(
-          (item) => item.rotation_period! >= value
-        );
-
-        setState({ ...state, filterResults: rotation_period });
-        break;
-      case "orbital_period":
-        const orbitalResults = state.results.filter(
-          (item) => item.orbital_period! >= value
-        );
-
-        setState({ ...state, filterResults: orbitalResults });
-        break;
-      case "diameter":
-        const diameterResults = state.results.filter(
-          (item) => item.diameter! >= value
-        );
-
-        setState({ ...state, filterResults: diameterResults });
+          setState({ ...state, filterResults: nameResults });
+        }
         break;
       case "climate":
-        const climateResults = state.results.filter((item) =>
-          item.climate.toLowerCase().includes(search)
-        );
+        {
+          const climateResults = state.results.filter((item) =>
+            item.climate.toLowerCase().includes(search)
+          );
 
-        setState({ ...state, filterResults: climateResults });
+          setState({ ...state, filterResults: climateResults });
+        }
         break;
       case "gravity":
-        const gravityResults = state.results.filter((item) =>
-          item.gravity.toLowerCase().includes(search)
-        );
+        {
+          const gravityResults = state.results.filter((item) =>
+            item.gravity.toLowerCase().includes(search)
+          );
 
-        setState({ ...state, filterResults: gravityResults });
+          setState({ ...state, filterResults: gravityResults });
+        }
         break;
       case "terrain":
-        const terrainResults = state.results.filter((item) =>
-          item.terrain.toLowerCase().includes(search)
-        );
+        {
+          const terrainResults = state.results.filter((item) =>
+            item.terrain.toLowerCase().includes(search)
+          );
 
-        setState({ ...state, filterResults: terrainResults });
-        break;
-      case "surface_water":
-        const surfaceResults = state.results.filter(
-          (item) => item.surface_water! >= value
-        );
-
-        setState({ ...state, filterResults: surfaceResults });
+          setState({ ...state, filterResults: terrainResults });
+        }
         break;
       case "films":
-        const filmsResults = state.results.filter((item) =>
-          item.films.find((x) => x.toLowerCase().includes(search))
-        );
+        {
+          const filmsResults = state.results.filter((item) =>
+            item.films.find((x) => x.toLowerCase().includes(search))
+          );
 
-        setState({ ...state, filterResults: filmsResults });
+          setState({ ...state, filterResults: filmsResults });
+        }
         break;
       case "created":
-        const createdResults = state.results.filter((item) =>
-          item.created.toLowerCase().includes(search)
-        );
+        {
+          const createdResults = state.results.filter((item) =>
+            item.created.toLowerCase().includes(search)
+          );
 
-        setState({ ...state, filterResults: createdResults });
+          setState({ ...state, filterResults: createdResults });
+        }
         break;
       case "edited":
-        const editedResults = state.results.filter((item) =>
-          item.edited.toLowerCase().includes(search)
-        );
+        {
+          const editedResults = state.results.filter((item) =>
+            item.edited.toLowerCase().includes(search)
+          );
 
-        setState({ ...state, filterResults: editedResults });
+          setState({ ...state, filterResults: editedResults });
+        }
         break;
       case "url":
-        const urlResults = state.results.filter((item) =>
-          item.url.toLowerCase().includes(search)
-        );
+        {
+          const urlResults = state.results.filter((item) =>
+            item.url.toLowerCase().includes(search)
+          );
 
-        setState({ ...state, filterResults: urlResults });
+          setState({ ...state, filterResults: urlResults });
+        }
         break;
 
       default:
@@ -126,7 +114,7 @@ export const Filter: React.FC<IFilter> = ({ openedFilter }: IFilter) => {
     setPreviousColumn(value);
     const newColumnArray = column.push(value);
 
-
+    console.log(newColumnArray);
   };
 
   const setComparisonFields = (value: string) => {
@@ -198,7 +186,7 @@ export const Filter: React.FC<IFilter> = ({ openedFilter }: IFilter) => {
             <Input
               placeholder="For what value?"
               onChange={(e) => setValuesFields(e.target.value)}
-              defaultValue=''
+              defaultValue=""
             />
           </Col>
         </Row>
