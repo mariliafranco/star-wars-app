@@ -1,0 +1,72 @@
+.PlanetsTable {
+  display: inline;
+  align-items: stretch;
+  height: 100vh;
+  max-width: 100%;
+
+  .buttons-filters {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin-bottom: 1em;
+    margin-top: 2em;
+    width: 100%;
+
+    button {
+      background-color: #5f6a70;
+      border: none;
+      color: white;
+      border-radius: 4px;
+      text-align: center;
+      display: flex;
+      font-size: 14px;
+    }
+  }
+
+  .filter-collapse-area {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 4em;
+  }
+  .filterRow {
+    display: flex;
+    justify-content: center;
+    padding: 2em;
+    align-items: center;
+  }
+
+  .tableRow {
+    display: flex;
+    justify-content: center;
+  }
+  .tableCol {
+    display: flex;
+    justify-content: center;
+  }
+  .tableComponent {
+    width: 90%;
+  }
+
+  .ant-table-thead > tr > th {
+    background: #175d86;
+    color: #ffffff;
+    cursor: default;
+    font-size: 14px;
+    padding: 0.5em 0.5em;
+    text-align: center;
+  }
+
+  .ant-table-thead > tr > th:hover {
+    background: #383841;
+  }
+  .ant-table-tbody > tr > td {
+    text-align: center;
+    padding: 0.5em 0;
+    border: groove 1px;
+    word-break:break-word;
+  }
+
+  .ant-table-tbody > tr > td:hover {
+    background: #b8b8dd;
+  }
+}

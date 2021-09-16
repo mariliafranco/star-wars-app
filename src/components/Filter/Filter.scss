@@ -1,0 +1,74 @@
+.Filter {
+  background: rgba(196, 196, 196, 0.18);
+  border-radius: 2px;
+  margin-bottom: 20px;
+
+  .ant-collapse {
+    height: 200px;
+  }
+  .ant-collapse-header {
+    display: none;
+  }
+
+  .ant-collapse-content-box {
+    background: rgba(196, 196, 196, 0.18);
+  }
+
+  .filterForm {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+  }
+  .filterButtonCol {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .filterText {
+    color: #012247;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 20px;
+    margin-top: 2em;
+  }
+
+  .filterButtonRow {
+    display: flex;
+    justify-content: right;
+    margin-top: 3em;
+  }
+
+
+  .filterButton {
+    border: 1px solid #41b4d2;
+    box-sizing: border-box;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .filterClearButton {
+    border: none;
+    background-color: transparent;
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin-right: 20px;
+  }
+
+  .filterForm {
+    .inputsRow {
+      display: flex;
+
+      input {
+        padding: 0.5em;
+      }
+    }
+  }
+
+  .selectorsRow {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+  }
+}

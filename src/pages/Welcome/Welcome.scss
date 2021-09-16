@@ -1,0 +1,51 @@
+.Welcome {
+  display: inline;
+  align-items: stretch;
+  height: 100vh;
+  .introductionRow {
+    margin-top: 10em;
+    .introductionCol {
+      width: 73ch;
+      animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 2px solid;
+      font-family: monospace;
+      font-size: 2em;
+    }
+    @keyframes typing {
+      from {
+        width: 0;
+      }
+    }
+
+    @keyframes blink {
+      50% {
+        border-color: transparent;
+      }
+    }
+  }
+
+  .welcomeButtonRow {
+    margin-top: 4em;
+    display: flex;
+    justify-content: center;
+    .welcomeButton {
+      border-radius: 5px;
+      display: flex;
+      position: absolute;
+      justify-content: center;
+      padding: 1.5em 2em;
+      align-items: center;
+      cursor: pointer;
+      font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+      font-size: 16px;
+    }
+
+    .welcomeButton:hover {
+      box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+        0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    }
+  }
+}

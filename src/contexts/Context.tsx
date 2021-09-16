@@ -1,6 +1,8 @@
-import React from 'react'
+import React from "react";
+import { PlanetsContextProvider } from "./planets";
 
-
-const Context = React.createContext('defaultValue');
+const Context: React.FC = ({ children }) => {
+  return <PlanetsContextProvider>{children}</PlanetsContextProvider>;
+};
 
 export default Context;

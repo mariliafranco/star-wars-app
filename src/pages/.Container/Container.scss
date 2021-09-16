@@ -1,0 +1,16 @@
+.overflow-row {
+    height: calc(100vh - 4.1rem);
+    margin-top: 0.1em;
+  
+    .content-row {
+      background: linear-gradient(
+        180deg,
+        rgba(236, 236, 236, 0.7) 0%,
+        rgba(254, 254, 254, 0.7) 10%
+      );
+      min-height: 90%;
+      display: flex;
+      justify-content: center;
+    }
+  }
+  
